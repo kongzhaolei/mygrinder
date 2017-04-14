@@ -121,7 +121,7 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>grinder</groupId>
+			<groupId>net.sf.grinder</groupId>
 			<artifactId>grinder-patch</artifactId>
 			<version>3.9.1-patch</version>
 		</dependency>
