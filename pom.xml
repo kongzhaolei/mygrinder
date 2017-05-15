@@ -30,6 +30,11 @@
 		<url>https://naver.github.io/ngrinder</url>
 	</organization>
 	<repositories>
+	    <repository>
+			<id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+		</repository>
 		<repository>
 			<id>maven-repo</id>
 			<name>Official Repository</name>
@@ -60,12 +65,12 @@
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<spring.security.version>4.0.4.RELEASE</spring.security.version>
 		<spring.data.version>1.9.4.RELEASE</spring.data.version>
-		<jdk-version>1.7</jdk-version>
+		<jdk-version>1.8</jdk-version>
 		<ngrinder.version>${project.version}</ngrinder.version>
 		<altDeploymentRepository>ngrinder::default::file:../ngrinder.maven.repo/releases</altDeploymentRepository>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<jetty.version>9.2.17.v20160517</jetty.version>
 	</properties>
 
@@ -121,7 +126,7 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>net.sf.grinder</groupId>
+			<groupId>grinder</groupId>
 			<artifactId>grinder-patch</artifactId>
 			<version>3.9.1-patch</version>
 		</dependency>
