@@ -89,7 +89,7 @@ public class GrinderRunnerTest {
 		@RunRate(50)
 		@Test
 		public void doTest() throws Exception {
-			HTTPResponse result = request.GET("http://www.naver.com");
+			HTTPResponse result = request.GET("http://www.baidu.com");
 			if (result.getStatusCode() != 200) {
 				grinder.getStatistics().getForLastTest().setSuccess(false);
 			} else {
@@ -101,7 +101,7 @@ public class GrinderRunnerTest {
 		@RunRate(10)
 		public void doTest2() throws Exception {
 			grinder.getStatistics().setDelayReports(true);
-			HTTPResponse result = request.GET("http://www.google.co.kr");
+			HTTPResponse result = request.GET("http://www.baidu.com");
 			if (result.getStatusCode() != 200) {
 				grinder.getStatistics().getForLastTest().setSuccess(false);
 			} else {

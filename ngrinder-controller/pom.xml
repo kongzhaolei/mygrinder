@@ -476,6 +476,7 @@
 				<version>2.15</version>
 				<configuration>
 					<argLine>-Xms600m -Xmx1024m -XX:MaxPermSize=200m</argLine>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 			<plugin>

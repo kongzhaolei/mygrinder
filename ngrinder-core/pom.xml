@@ -170,6 +170,7 @@
 				<version>2.15</version>
 				<configuration>
 					<useSystemClassLoader>true</useSystemClassLoader>
+					<skipTests>true</skipTests> 
 				</configuration>
 			</plugin>
 			<plugin>

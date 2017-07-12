@@ -14,10 +14,13 @@
 		<module>ngrinder-groovy</module>
 		<module>ngrinder-sh</module>
 	</modules>
-	<issueManagement>
-		<system>jira</system>
-		<url>http://jira.cubrid.org/</url>
-	</issueManagement>
+	<distributionManagement>
+                <snapshotRepository>
+                    <id>nexus</id>
+                    <name>Nexus Snapshot</name>
+                    <url>http://10.1.39.200:8081/repository/kettle/</url>
+                </snapshotRepository>
+    </distributionManagement>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -31,43 +34,22 @@
 	</organization>
 	<repositories>
 	    <repository>
-			<id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+			<id>treenewbee</id>
+            <name>treenewbee repo</name>
+            <url>http://10.1.39.200:8081/repository/treenewbee/</url>
 		</repository>
 		<repository>
-			<id>maven-repo</id>
-			<name>Official Repository</name>
-			<url>http://repo1.maven.org/maven2</url>
-		</repository>
-		<repository>
-			<id>springsource-repo</id>
-			<name>SpringSource Repository</name>
-			<url>http://repo.springsource.org/release</url>
-		</repository>
-		<repository>
-			<id>repository.jboss.org-public</id>
-			<name>JBoss repository</name>
-			<url>https://repository.jboss.org/nexus/content/groups/public</url>
-		</repository>
-		<repository>
-			<id>cubrid.release.repository</id>
-			<url>http://maven.cubrid.org</url>
-		</repository>
-		<repository>
-			<id>scm-manager.repo</id>
-			<name>scm-manager.repo</name>
-			<url>http://maven.scm-manager.org/nexus/content/repositories/releases</url>
+			<id>kettle</id>
+            <name>kettle repo</name>
+            <url>http://10.1.39.200:8081/repository/kettle//</url>
 		</repository>
 	</repositories>
-
 	<properties>
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<spring.security.version>4.0.4.RELEASE</spring.security.version>
 		<spring.data.version>1.9.4.RELEASE</spring.data.version>
 		<jdk-version>1.8</jdk-version>
 		<ngrinder.version>${project.version}</ngrinder.version>
-		<altDeploymentRepository>ngrinder::default::file:../ngrinder.maven.repo/releases</altDeploymentRepository>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -142,6 +124,7 @@
 			<version>2.6</version>
 		</dependency>
 	</dependencies>
+	
 	<profiles>
 		<profile>
 			<id>javadoc</id>
@@ -252,5 +235,4 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
 </project>
