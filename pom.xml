@@ -36,6 +36,16 @@
 			<url>http://repo1.maven.org/maven2</url>
 		</repository>
 		<repository>
+			<id>treenewbee</id>
+			<name>treenewbee repo</name>
+			<url>http://10.200.50.136:8081/repository/treenewbee/</url>
+		</repository>
+		<repository>
+			<id>kettle</id>
+			<name>kettle repo</name>
+			<url>http://10.200.50.136:8081/repository/kettle/</url>
+		</repository>
+		<repository>
 			<id>springsource-repo</id>
 			<name>SpringSource Repository</name>
 			<url>http://repo.springsource.org/release</url>
@@ -124,6 +134,8 @@
 			<groupId>grinder</groupId>
 			<artifactId>grinder-patch</artifactId>
 			<version>3.9.1-patch</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/grinder-3.9.1-patch.jar</systemPath>
 		</dependency>
 		<!-- Commons -->
 		<dependency>
